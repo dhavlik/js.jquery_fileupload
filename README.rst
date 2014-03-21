@@ -4,8 +4,7 @@ js.jquery_fileupload
 Introduction
 ============
 
-This library packages `jQuery File Upload`_ for `fanstatic`_. Note that
-due to licensing constraints we can only provide the flash version.
+This library packages `jQuery File Upload`_ for `fanstatic`_.
 
 .. _`fanstatic`: http://fanstatic.org
 .. _`jQuery File Upload`: https://github.com/blueimp/jQuery-File-Upload
