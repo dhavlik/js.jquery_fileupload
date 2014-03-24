@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.17.1'
+version = '8.2.2dev'
 
 
 def read(*rnames):
@@ -32,7 +32,9 @@ setup(
     zip_safe=False,
     install_requires=[
         'fanstatic',
+        'js.bootstrap',
         'js.jquery',
+        'js.jqueryui',
         'setuptools',
     ],
     entry_points={
