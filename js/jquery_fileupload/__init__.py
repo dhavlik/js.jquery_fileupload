@@ -2,6 +2,7 @@ from fanstatic import Group, Library, Resource
 
 import js.bootstrap
 import js.jquery
+import js.jqueryui
 
 library = Library('jquery_fileupload', 'resources')
 
@@ -9,15 +10,10 @@ jquery_getimagedata = Resource(
     library, 'vendor/jquery.getimagedata.min.js',
 )
 
-jqueryui_widget = Resource(
-    library, 'vendor/jquery.ui.widget.js',
-)
-
-
 tmpl_js = Resource(
     library, 'js/tmpl.min.js',
     depends=[
-        jqueryui_widget,
+        js.jqueryui.ui_widget,
         jquery_getimagedata,
     ],
 )
