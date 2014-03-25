@@ -62,6 +62,13 @@ fileupload_image_js = Resource(
     ],
 )
 
+fileupload_validate_js = Resource(
+    library, 'js/jquery.fileupload-validate.js',
+    depends=[
+        fileupload_image_js,
+    ],
+)
+
 fileupload_ui_css = Resource(
     library, 'css/jquery.fileupload-ui.css',
 )
@@ -70,7 +77,7 @@ fileupload_ui_js = Resource(
     library, 'js/jquery.fileupload-ui.js',
     depends=[
         fileupload_ui_css,
-        fileupload_image_js,
+        fileupload_validate_js,
     ],
 )
 
